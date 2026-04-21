@@ -1,196 +1,428 @@
 <!doctype html>
 <html lang="pt-BR">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Chaveiro PRIME</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chaveiro PRIME – 24h | Balneário Camboriú</title>
 
-  <!-- FAVICONS -->
+  <!-- Favicons -->
   <link rel="icon" type="image/png" sizes="32x32" href="image/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="image/favicon-16x16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="image/apple-touch-icon.png">
-  <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="image/favicon.ico">
 
-  <!-- Descrição -->
-  <meta name="description" content="Chaveiro PRIME 24h - Atendimento rápido e profissional.">
-
-  <!-- Open Graph / Twitter atualizados -->
-  <!-- Canonical -->
+  <!-- SEO -->
+  <meta name="description" content="Chaveiro PRIME – atendimento 24h em Balneário Camboriú. Abertura residencial, cópia de chaves, fechaduras digitais, programação de controles e molas hidráulicas.">
   <link rel="canonical" href="https://chaveiroprime.com/">
 
-  <!-- Open Graph (Facebook/WhatsApp) -->
-  <meta property="og:title" content="Chaveiro PRIME">
-  <meta property="og:description" content="Chaveiro PRIME 24h - Atendimento rápido e profissional.">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Chaveiro PRIME – 24h">
+  <meta property="og:description" content="Atendimento rápido e profissional em Balneário Camboriú e Região.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://chaveiroprime.com/">
-  <meta property="og:site_name" content="Chaveiro PRIME">
-  <meta property="og:locale" content="pt_BR">
-
-  <!-- Imagem principal 1200x630 -->
   <meta property="og:image" content="https://chaveiroprime.com/image/logo2-1200x630.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Logomarca do Chaveiro PRIME">
-
-  <!-- (Opcional) fallback menor 600x315 -->
-  <meta property="og:image" content="https://chaveiroprime.com/image/logo2-600x315.jpg">
-  <meta property="og:image:width" content="600">
-  <meta property="og:image:height" content="315">
+  <meta property="og:locale" content="pt_BR">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Chaveiro PRIME">
-  <meta name="twitter:description" content="Chaveiro PRIME 24h - Atendimento rápido e profissional.">
+  <meta name="twitter:title" content="Chaveiro PRIME – 24h">
+  <meta name="twitter:description" content="Atendimento rápido e profissional em Balneário Camboriú e Região.">
   <meta name="twitter:image" content="https://chaveiroprime.com/image/logo2-1200x630.jpg">
 
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="css/main.css">
-
-  <!-- Override: restaurando tamanho e proporção originais da seção de serviços -->
-  <style>
-    /* Container mais largo e com espaçamento maior */
-    .services {
-      max-width: 1120px !important;
-      gap: 30px !important;
-      margin: 40px auto !important;
+  <!-- Schema LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Locksmith",
+    "name": "Chaveiro PRIME",
+    "telephone": "+5547997324516",
+    "url": "https://chaveiroprime.com",
+    "openingHours": "Mo-Su 00:00-24:00",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Balneário Camboriú",
+      "addressRegion": "SC",
+      "addressCountry": "BR"
     }
+  }
+  </script>
 
-    /* Cartões maiores (largura/altura e raio) */
-    .services .service {
-      width: 260px !important;
-      height: 165px !important;
-      padding: 24px 16px !important;
-      border-radius: 20px !important;
-    }
+  <!-- Fontes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
-    /* Ícones maiores */
-    .services .service img {
-      width: 80px !important;
-      margin-bottom: 14px !important;
-    }
-
-    /* Título com tipografia mais forte */
-    .services .service p {
-      font-size: 16px !important;
-      letter-spacing: .6px !important;
-    }
-
-    /* Responsivo */
-    @media (max-width: 480px) {
-      .services {
-        gap: 18px !important;
-        margin: 28px auto !important;
-      }
-
-      .services .service {
-        width: 160px !important;
-        height: 120px !important;
-        border-radius: 16px !important;
-        padding: 16px 10px !important;
-      }
-
-      .services .service img {
-        width: 46px !important;
-        margin-bottom: 10px !important;
-      }
-
-      .services .service p {
-        font-size: 13px !important;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="css/novo.css">
 </head>
-
 <body>
-  <header data-anim>
-    <img src="image/logo.png" alt="Logo Chaveiro Prime">
-    <h1>CHAVEIRO <span>PRIME</span></h1>
-    <p class="subtitle">Agilidade e Confiança onde você estiver.</p>
 
-    </header>
-
-  <main>
-    <div class="services">
-      <div class="service" data-service="troca fechadura" data-anim>
-        <img src="image/copias.png" alt="troca fechadura">
-        <p>CÓPIA DE CHAVES & TAGS</p>
-      </div>
-
-      <div class="service" data-service="abertura" data-anim>
-        <img src="image/abertura.png" alt="abertura">
-        <p>ABERTURA RESIDENCIAL</p>
-      </div>
-
-      <div class="service" data-service="programacao de controles" data-anim>
-        <img src="image/controle.png" alt="programação de controles">
-        <p>PROGRAMAÇÃO DE CONTROLES</p>
-      </div>
-
-      <div class="service" data-service="fechaduras digitais" data-anim>
-        <img src="image/digitais.png" alt="fechaduras digitais">
-        <p>INSTALAÇÃO DE FECHADURAS DIGITAIS</p>
-      </div>
-
-      <div class="service" data-service="molas" data-anim>
-        <img src="image/molas.png" alt="molas">
-        <p>MANUTENÇÃO DE MOLAS HIDRÁULICAS</p>
-      </div>
+  <!-- ══════════════════════════════
+       HERO
+  ══════════════════════════════ -->
+  <header class="hero">
+    <div class="hero-blobs" aria-hidden="true">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
     </div>
-
-    <div class="emergency" data-anim>
-      <h2>ATENDIMENTO DE EMERGÊNCIA 24 HORAS</h2>
-      <p>
-        Perdeu a chave? Precisa abrir sua casa ou comércio com urgência?<br>
-        O Chaveiro PRIME atende 24 horas por dia, direto onde você estiver em Balneário Camboriú e Região.
-        📞 (47) 9 9732-4516
-      </p>
-    </div>
-
-    <div class="contact" data-anim>
-      <a href="tel:+5547997324516" class="btn">Ligar agora</a>
-
-      <div class="social">
-        <a href="https://www.facebook.com/people/Chaveiro-PRIME/61583404417799/"><img src="image/facebook.png" alt="Facebook"></a>
-        <a href="https://www.instagram.com/chaveiroprimebc/"><img src="image/instagram.png" alt="Instagram"></a>
-        <a href="mailto:contato.chaveiroprime@gmail.com" aria-label="Enviar e-mail">
-          <img src="image/email.png" alt="Enviar e-mail para Chaveiro Prime">
+    <div class="hero-content">
+      <img src="image/logo.png" alt="Chaveiro PRIME" class="hero-logo fade-up" loading="eager">
+      <div class="badge-24h fade-up">
+        <span class="badge-dot" aria-hidden="true"></span>
+        DISPONÍVEL 24 HORAS
+      </div>
+      <h1 class="fade-up">CHAVEIRO <span>PRIME</span></h1>
+      <p class="hero-sub fade-up">Agilidade e Confiança onde você estiver.</p>
+      <div class="hero-btns fade-up">
+        <a href="https://wa.me/5547997324516?text=Olá!%20Preciso%20de%20um%20chaveiro."
+           class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+          </svg>
+          Chamar no WhatsApp
+        </a>
+        <a href="tel:+5547997324516" class="btn btn-call">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+               stroke-linecap="round" stroke-linejoin="round" width="20" height="20" aria-hidden="true">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07
+                     A19.5 19.5 0 0 1 4.69 13.5a19.79 19.79 0 0 1-3.01-8.6
+                     A2 2 0 0 1 3.66 2.68h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81
+                     a2 2 0 0 1-.45 2.11L7.91 10.1a16 16 0 0 0 6 6l1.27-1.27
+                     a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+          </svg>
+          (47) 9 9732-4516
         </a>
       </div>
     </div>
+  </header>
+
+  <main>
+
+    <!-- ══════════════════════════════
+         TRUST BAR
+    ══════════════════════════════ -->
+    <div class="trust-bar fade-up" role="list" aria-label="Diferenciais">
+
+      <div class="trust-item" role="listitem">
+        <div class="trust-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+               stroke-linecap="round" stroke-linejoin="round" width="26" height="26">
+            <circle cx="12" cy="12" r="10"/>
+            <polyline points="12 6 12 12 16 14"/>
+          </svg>
+        </div>
+        <div class="trust-value">24H</div>
+        <div class="trust-text">
+          <strong>Disponível sempre</strong>
+          <span>Dia, noite, feriado —<br>a qualquer hora estamos prontos.</span>
+        </div>
+      </div>
+
+      <div class="trust-item" role="listitem">
+        <div class="trust-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+               stroke-linecap="round" stroke-linejoin="round" width="26" height="26">
+            <polyline points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+          </svg>
+        </div>
+        <div class="trust-value">Ágil</div>
+        <div class="trust-text">
+          <strong>Atendimento rápido</strong>
+          <span>Chegamos até você<br>o mais rápido possível.</span>
+        </div>
+      </div>
+
+      <div class="trust-item" role="listitem">
+        <div class="trust-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+               stroke-linecap="round" stroke-linejoin="round" width="26" height="26">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+          </svg>
+        </div>
+        <div class="trust-value">Prime</div>
+        <div class="trust-text">
+          <strong>Qualidade garantida</strong>
+          <span>Profissionais treinados<br>e ferramentas de qualidade.</span>
+        </div>
+      </div>
+
+      <div class="trust-item" role="listitem">
+        <div class="trust-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+               stroke-linecap="round" stroke-linejoin="round" width="26" height="26">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+            <circle cx="12" cy="10" r="3"/>
+          </svg>
+        </div>
+        <div class="trust-value">BC</div>
+        <div class="trust-text">
+          <strong>Balneário Camboriú</strong>
+          <span>Atendemos toda a cidade<br>e região litorânea.</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ══════════════════════════════
+         SERVIÇOS
+    ══════════════════════════════ -->
+    <section class="services-section" aria-label="Nossos Serviços">
+      <span class="section-label fade-up">O que fazemos</span>
+      <h2 class="section-title fade-up">Nossos Serviços</h2>
+      <div class="divider fade-up"></div>
+      <p class="section-sub fade-up">Toque em qualquer serviço para falar conosco no WhatsApp</p>
+
+      <div class="services-grid">
+
+        <button class="service-card fade-up"
+                data-msg="Olá! Gostaria de informações sobre Cópia de Chaves e Tags."
+                aria-label="Cópia de Chaves e Tags – falar no WhatsApp">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                 stroke-linecap="round" stroke-linejoin="round" width="36" height="36" aria-hidden="true">
+              <path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778
+                       5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"/>
+            </svg>
+          </div>
+          <span class="service-label">CÓPIA DE CHAVES &amp; TAGS</span>
+          <span class="service-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                 width="12" height="12"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07
+                 A19.5 19.5 0 0 1 4.69 13.5a19.79 19.79 0 0 1-3.01-8.6A2 2 0 0 1 3.66 2.68h3a2 2 0 0 1 2 1.72
+                 c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 10.1a16 16 0 0 0 6 6l1.27-1.27
+                 a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Toque para contato
+          </span>
+        </button>
+
+        <button class="service-card fade-up"
+                data-msg="Olá! Preciso de ajuda com Abertura Residencial."
+                aria-label="Abertura Residencial – falar no WhatsApp">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                 stroke-linecap="round" stroke-linejoin="round" width="36" height="36" aria-hidden="true">
+              <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+              <path d="M7 11V7a5 5 0 0 1 9.9-1"/>
+            </svg>
+          </div>
+          <span class="service-label">ABERTURA RESIDENCIAL</span>
+          <span class="service-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                 width="12" height="12"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07
+                 A19.5 19.5 0 0 1 4.69 13.5a19.79 19.79 0 0 1-3.01-8.6A2 2 0 0 1 3.66 2.68h3a2 2 0 0 1 2 1.72
+                 c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 10.1a16 16 0 0 0 6 6l1.27-1.27
+                 a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Toque para contato
+          </span>
+        </button>
+
+        <button class="service-card fade-up"
+                data-msg="Olá! Quero saber sobre Programação de Controles."
+                aria-label="Programação de Controles – falar no WhatsApp">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                 stroke-linecap="round" stroke-linejoin="round" width="36" height="36" aria-hidden="true">
+              <path d="M1.42 9a16 16 0 0 1 21.16 0"/>
+              <path d="M5 12.55a11 11 0 0 1 14.08 0"/>
+              <path d="M8.53 16.11a6 6 0 0 1 6.95 0"/>
+              <circle cx="12" cy="20" r="1" fill="currentColor" stroke="none"/>
+            </svg>
+          </div>
+          <span class="service-label">PROGRAMAÇÃO DE CONTROLES</span>
+          <span class="service-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                 width="12" height="12"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07
+                 A19.5 19.5 0 0 1 4.69 13.5a19.79 19.79 0 0 1-3.01-8.6A2 2 0 0 1 3.66 2.68h3a2 2 0 0 1 2 1.72
+                 c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 10.1a16 16 0 0 0 6 6l1.27-1.27
+                 a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Toque para contato
+          </span>
+        </button>
+
+        <button class="service-card fade-up"
+                data-msg="Olá! Tenho interesse em Instalação de Fechaduras Digitais."
+                aria-label="Fechaduras Digitais – falar no WhatsApp">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                 stroke-linecap="round" stroke-linejoin="round" width="36" height="36" aria-hidden="true">
+              <rect x="5" y="11" width="14" height="10" rx="2"/>
+              <path d="M8 11V7a4 4 0 0 1 8 0v4"/>
+              <circle cx="12" cy="16" r="1" fill="currentColor" stroke="none"/>
+            </svg>
+          </div>
+          <span class="service-label">FECHADURAS DIGITAIS</span>
+          <span class="service-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                 width="12" height="12"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07
+                 A19.5 19.5 0 0 1 4.69 13.5a19.79 19.79 0 0 1-3.01-8.6A2 2 0 0 1 3.66 2.68h3a2 2 0 0 1 2 1.72
+                 c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 10.1a16 16 0 0 0 6 6l1.27-1.27
+                 a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Toque para contato
+          </span>
+        </button>
+
+        <button class="service-card fade-up"
+                data-msg="Olá! Preciso de Manutenção de Molas Hidráulicas."
+                aria-label="Molas Hidráulicas – falar no WhatsApp">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                 stroke-linecap="round" stroke-linejoin="round" width="36" height="36" aria-hidden="true">
+              <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77
+                       a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91
+                       a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+            </svg>
+          </div>
+          <span class="service-label">MOLAS HIDRÁULICAS</span>
+          <span class="service-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                 width="12" height="12"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07
+                 A19.5 19.5 0 0 1 4.69 13.5a19.79 19.79 0 0 1-3.01-8.6A2 2 0 0 1 3.66 2.68h3a2 2 0 0 1 2 1.72
+                 c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 10.1a16 16 0 0 0 6 6l1.27-1.27
+                 a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Toque para contato
+          </span>
+        </button>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════
+         COMO FUNCIONA
+    ══════════════════════════════ -->
+    <section class="how-section" aria-label="Como funciona">
+      <span class="section-label fade-up">Simples assim</span>
+      <h2 class="section-title fade-up">Como Funciona</h2>
+      <div class="divider fade-up"></div>
+      <br>
+      <div class="steps">
+
+        <div class="step fade-up">
+          <div class="step-num" aria-hidden="true">1</div>
+          <h3>Escolha o Serviço</h3>
+          <p>Toque no serviço que você precisa acima</p>
+        </div>
+
+        <div class="step-arrow fade-up" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+               stroke-linecap="round" stroke-linejoin="round" width="28" height="28">
+            <line x1="5" y1="12" x2="19" y2="12"/>
+            <polyline points="12 5 19 12 12 19"/>
+          </svg>
+        </div>
+
+        <div class="step fade-up">
+          <div class="step-num" aria-hidden="true">2</div>
+          <h3>Fale no WhatsApp</h3>
+          <p>Sua mensagem é enviada automaticamente para nós</p>
+        </div>
+
+        <div class="step-arrow fade-up" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+               stroke-linecap="round" stroke-linejoin="round" width="28" height="28">
+            <line x1="5" y1="12" x2="19" y2="12"/>
+            <polyline points="12 5 19 12 12 19"/>
+          </svg>
+        </div>
+
+        <div class="step fade-up">
+          <div class="step-num" aria-hidden="true">3</div>
+          <h3>Atendimento Rápido</h3>
+          <p>Nossa equipe chega até você com agilidade</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════
+         EMERGÊNCIA
+    ══════════════════════════════ -->
+    <section class="emergency-section" aria-label="Atendimento de emergência">
+      <div class="emergency-inner fade-up">
+        <div class="emergency-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#1E90FF" stroke-width="2"
+               stroke-linecap="round" stroke-linejoin="round" width="30" height="30">
+            <circle cx="12" cy="12" r="10"/>
+            <line x1="12" y1="8" x2="12" y2="12"/>
+            <line x1="12" y1="16" x2="12.01" y2="16"/>
+          </svg>
+        </div>
+        <h2>ATENDIMENTO DE EMERGÊNCIA 24 HORAS</h2>
+        <p>
+          Perdeu a chave? Precisa abrir sua casa ou comércio com urgência?<br>
+          O Chaveiro PRIME atende 24 horas por dia, direto onde você estiver
+          em <strong>Balneário Camboriú e Região</strong>.
+        </p>
+        <a href="tel:+5547997324516" class="emergency-phone" aria-label="Ligar para (47) 9 9732-4516">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+               stroke-linecap="round" stroke-linejoin="round" width="22" height="22" aria-hidden="true">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07
+                     A19.5 19.5 0 0 1 4.69 13.5a19.79 19.79 0 0 1-3.01-8.6
+                     A2 2 0 0 1 3.66 2.68h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81
+                     a2 2 0 0 1-.45 2.11L7.91 10.1a16 16 0 0 0 6 6l1.27-1.27
+                     a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+          </svg>
+          (47) 9 9732-4516
+        </a>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════
+         CTA WHATSAPP
+    ══════════════════════════════ -->
+    <section class="cta-section" aria-label="Chamar no WhatsApp">
+      <div class="cta-inner fade-up">
+        <h2>Precisa de um Chaveiro Agora?</h2>
+        <p>Estamos prontos para te atender. Fale conosco agora mesmo no WhatsApp!</p>
+        <a href="https://wa.me/5547997324516?text=Olá!%20Preciso%20de%20atendimento%20urgente."
+           class="btn btn-whatsapp btn-lg" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22" aria-hidden="true">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+          </svg>
+          Falar no WhatsApp
+        </a>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════
+         REDES SOCIAIS
+    ══════════════════════════════ -->
+    <section class="contact-section fade-up" aria-label="Redes sociais">
+      <h3>Siga-nos nas redes sociais</h3>
+      <div class="social-links">
+        <a href="https://www.facebook.com/people/Chaveiro-PRIME/61583404417799/"
+           target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+          <img src="image/facebook.png" alt="Facebook" width="22" height="22" loading="lazy">
+        </a>
+        <a href="https://www.instagram.com/chaveiroprimebc/"
+           target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <img src="image/instagram.png" alt="Instagram" width="22" height="22" loading="lazy">
+        </a>
+        <a href="mailto:contato.chaveiroprime@gmail.com" aria-label="Enviar e-mail">
+          <img src="image/email.png" alt="E-mail" width="22" height="22" loading="lazy">
+        </a>
+      </div>
+    </section>
+
   </main>
 
-  <footer style="margin-top:40px; padding:15px; font-size:14px; color:#999;">
-    © 2025 Chaveiro PRIME • Balneário Camboriú
+  <!-- ══════════════════════════════
+       RODAPÉ
+  ══════════════════════════════ -->
+  <footer>
+    <img src="image/logo.png" alt="Chaveiro PRIME" class="footer-logo" loading="lazy">
+    <p>© 2025 Chaveiro PRIME · Balneário Camboriú</p>
   </footer>
 
-  <!-- JS -->
-  <script src="js/main.js" defer></script>
-  <script>
-    // Número do WhatsApp (sem espaços, parênteses ou traços)
-    const whatsappNumber = '5547997324516';
+  <!-- Botão flutuante WhatsApp -->
+  <a href="https://wa.me/5547997324516" class="whatsapp-float"
+     target="_blank" rel="noopener noreferrer" aria-label="Chamar no WhatsApp">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path fill="#fff" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
 
-    // Mensagens personalizadas para cada serviço
-    const mensagens = {
-      "troca fechadura": "Olá! Gostaria de informações sobre Troca e Manutenção de Fechaduras Residenciais.",
-      "abertura": "Olá! Preciso de ajuda com Abertura Residencial.",
-      "programacao de controles": "Olá! Quero saber sobre Programação de Controles.",
-      "fechaduras digitais": "Olá! Tenho interesse em Instalação de Fechaduras Digitais.",
-      "molas": "Olá! Preciso de Manutenção de Molas Hidráulicas."
-    };
-
-    // Adiciona evento de clique a todos os cards
-    document.querySelectorAll('.service').forEach(card => {
-      card.addEventListener('click', () => {
-        const tipo = card.dataset.service;
-        const msg = encodeURIComponent(mensagens[tipo]);
-        const url = `https://wa.me/${whatsappNumber}?text=${msg}`;
-        window.open(url, '_blank');
-      });
-    });
-  </script>
+  <script src="js/novo.js" defer></script>
 </body>
-
 </html>
