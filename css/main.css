@@ -1,0 +1,537 @@
+/* ======== ESTILO BASE ======== */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background: radial-gradient(circle at center, #162c56 0%, #0b152e 70%, #040a18 100%);
+  color: white;
+  text-align: center;
+  line-height: 1.6;
+}
+
+header {
+  padding: 50px 20px 25px;
+  position: relative;
+}
+
+header img {
+  width: 185px;
+}
+
+h1 {
+  margin: 10px 0 5px;
+  font-size: 36px;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 1px;
+  color: #fff;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+h1 span {
+  color: #1E90FF;
+  font-weight: 700;
+  text-shadow: 0 2px 8px rgba(30, 144, 255, 0.5);
+}
+
+p.subtitle {
+  color: #ddd;
+  margin-top: 5px;
+  font-size: 17px;
+}
+
+/* ======== BOTÕES ======== */
+.buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 25px 0;
+}
+
+/* botão padrão */
+.btn {
+  background: linear-gradient(135deg, #1e90ff, #0072ff);
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 600;
+  padding: 10px 22px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.25s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.35);
+}
+
+.btn:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+}
+
+/* WhatsApp botão grande (ex: "Chamar no WhatsApp") */
+.btn.whatsapp {
+  background-color: #25D366;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.btn.whatsapp:hover {
+  background-color: #1ab854;
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 10px 20px rgba(26, 184, 84, 0.5);
+}
+
+.btn.whatsapp .icon {
+  width: 22px;
+  height: 22px;
+}
+
+/* ======== SERVIÇOS (HOME) ======== */
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  margin: 30px auto;
+  max-width: 900px;
+}
+
+.service {
+  width: 200px;
+  height: 140px;
+  cursor: pointer;
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.1));
+  border-radius: 14px;
+  padding: 20px 10px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.service:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 12px 25px rgba(30, 144, 255, 0.5);
+  border-color: rgba(30, 144, 255, 0.5);
+}
+
+.service img {
+  width: 46px;
+  margin-bottom: 12px;
+  filter: brightness(0) invert(1);
+  opacity: 0.95;
+  transition: all 0.25s ease;
+}
+
+.service:hover img {
+  opacity: 1;
+}
+
+.service p {
+  font-size: 15px;
+  margin: 0;
+  font-weight: 600;
+  color: #f5f5f5;
+  letter-spacing: 0.5px;
+}
+
+/* ======== EMERGÊNCIA ======== */
+.emergency {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 14px;
+  margin: 40px auto;
+  max-width: 700px;
+  padding: 28px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(8px);
+}
+
+.emergency h2 {
+  margin-top: 0;
+  color: #1E90FF;
+  font-family: 'Montserrat', sans-serif;
+  text-shadow: 0 2px 6px rgba(30, 144, 255, 0.4);
+}
+
+/* ======== CONTATO ======== */
+.contact {
+  margin: 50px 0 30px;
+}
+
+/* o .btn dentro de .contact mantém o mesmo visual azul,
+   só adiciona borda clarinha */
+.contact .btn {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.contact .btn:hover {
+  background: linear-gradient(135deg, #63B8FF, #1E90FF);
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 10px 20px rgba(30, 144, 255, 0.5);
+}
+
+.social {
+  margin-top: 35px;
+}
+
+.social img {
+  width: 28px;
+  margin: 0 8px;
+  filter: brightness(0) invert(1);
+  opacity: 0.8;
+  transition: all 0.25s ease;
+}
+
+.social img:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+/* ======== ANIMAÇÕES ======== */
+.anim-seed {
+  opacity: 0;
+  transform: translateY(14px);
+  filter: blur(6px);
+}
+
+.anim-in {
+  opacity: 1;
+  transform: none;
+  filter: none;
+  transition: opacity .6s ease, transform .6s ease, filter .8s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .anim-in {
+    transition: none !important;
+  }
+}
+
+/* ======== RESPONSIVO ======== */
+@media (max-width: 480px) {
+  body {
+    font-size: 15px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  .service {
+    width: 150px;
+    height: 110px;
+  }
+
+  .service img {
+    width: 36px;
+  }
+
+  .service p {
+    font-size: 13px;
+  }
+}
+
+/* ======== IMAGENS DOS PRODUTOS ======== */
+.product img,
+.products-grid img {
+  max-width: 220px;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.product img:hover,
+.products-grid img:hover {
+  transform: scale(1.05);
+}
+
+/* ======== GRADE DE PRODUTOS ======== */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(260px, 1fr));
+  gap: 30px;
+  justify-content: center;
+  align-items: start;
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 15px;
+}
+
+/* ======== CARD DO PRODUTO ======== */
+.product-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 14px;
+  padding: 18px;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+}
+
+.product-card:hover {
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 14px 28px rgba(30, 144, 255, 0.35);
+  border-color: rgba(30, 144, 255, 0.3);
+}
+
+/* Imagem do produto — sem o quadrado interno */
+.product-card img {
+  border-radius: 10px;
+  box-shadow: none !important;
+  transition: all 0.3s ease;
+}
+
+.product-card img:hover {
+  transform: scale(1.05);
+  box-shadow: none !important;
+}
+
+/* ======== RESPONSIVIDADE GRADE PRODUTOS ======== */
+@media (max-width: 640px) {
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ======== BOTÃO FLUTUANTE DO WHATSAPP ======== */
+.whatsapp-float {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: #25D366;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.whatsapp-float img {
+  width: 28px;
+  height: 28px;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.07);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.3);
+}
+
+.btn-home {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  background: linear-gradient(135deg, #1e90ff, #0072ff);
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 600;
+  padding: 10px 22px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  transition: all 0.25s ease;
+  z-index: 1000;
+}
+
+.btn-home:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.35);
+}
+
+/* ===== VÍDEO DO PRODUTO ===== */
+.video-section {
+  margin-top: 40px;
+  text-align: left;
+  color: #fff;
+}
+
+.video-section h3 {
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 10px;
+  color: #1E90FF;
+  text-shadow: 0 2px 6px rgba(30, 144, 255, 0.4);
+}
+
+.video-wrapper {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7);
+  padding: 16px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.video-frame {
+  position: relative;
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #000;
+  box-shadow: 0 16px 40px rgba(30, 144, 255, 0.4);
+}
+
+/* mantém 16:9 responsivo */
+.video-frame::before {
+  content: "";
+  display: block;
+  padding-top: 56.25%;
+}
+
+.video-frame iframe,
+.video-frame video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  object-fit: cover;
+}
+/* ======== PADRONIZAÇÃO DE TAMANHO DO CARROSSEL DE PRODUTOS ======== */
+.product-wrapper .carousel-slide {
+    flex: 0 0 100%;
+    max-width: 100%;
+    scroll-snap-align: center;
+    text-align: center;
+    padding: 20px 0;
+    box-sizing: border-box;
+    background: none;
+    border: none;
+    height: 480px; /* Altura fixa do bloco da imagem */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-wrapper .carousel-slide img {
+    max-height: 420px;
+    width: auto;
+    max-width: 100%;
+    border-radius: 16px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+    border: none;
+    object-fit: contain;
+    background: none;
+}
+
+
+
+/* ======== AJUSTE ESCOPADO (LISTAGEM DE FECHADURAS) ======== */
+/* Só aplica dentro da seção de modelos da página fechaduras-digitais */
+#section-modelos .products-grid { align-items: stretch !important; }
+
+#section-modelos .product-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  min-height: 420px;
+}
+
+#section-modelos .product-card > img {
+  height: 200px;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+  margin: 0 auto 10px;
+  display: block;
+}
+
+#section-modelos .product-card > h3 {
+  min-height: 46px;
+  margin: 12px 0 6px;
+}
+
+#section-modelos .product-card > p {
+  min-height: 40px;
+  flex-grow: 1;
+  margin: 0 0 12px;
+}
+
+#section-modelos .product-card > .btn { margin-top: auto; }
+
+@media (max-width: 640px) {
+  #section-modelos .product-card { min-height: 380px; }
+  #section-modelos .product-card > img { height: 160px; }
+}
+/* ======== LINKS DE TELEFONE (TEL:) ======== */
+a[href^="tel"] {
+  color: #ffffff !important;          /* deixa o telefone branco */
+  text-decoration: none !important;   /* remove o sublinhado */
+}
+
+a[href^="tel"]:hover {
+  color: #63B8FF !important;          /* tom de azul suave ao passar o dedo/mouse */
+}
+
+/* ======== BANNER INFORMATIVO ======== */
+.info-banner {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 14px;
+  color: #fff;
+  padding: 14px 20px;
+  max-width: 760px;
+  margin: 20px auto 10px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(6px);
+  text-shadow: 0 1px 3px rgba(0,0,0,0.4);
+}
+
+.info-banner span {
+  display: block;
+  font-size: 15px;
+  color: #cfd8ff;
+  margin-top: 4px;
+}
+
+@media (max-width: 480px) {
+  .info-banner {
+    font-size: 14px;
+    padding: 12px 14px;
+    margin: 15px auto;
+  }
+
+  .info-banner span {
+    font-size: 13px;
+  }
+}
+
+/* ======== AJUSTE DE ESPAÇAMENTO ENTRE HEADER E BANNER ======== */
+header {
+  padding-bottom: 10px !important; /* diminui o espaço inferior do header */
+}
+
+p.subtitle {
+  margin-bottom: 40px !important; /* aproxima o subtítulo do banner */
+}
+
+.info-banner {
+  margin-top: 8px !important; /* reduz o espaço acima do banner */
+}
+
+
+
